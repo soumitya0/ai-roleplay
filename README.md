@@ -3,8 +3,7 @@
 Write a system prompt, then talk to an AI character by voice (Vapi) while your camera is on.
 
 ## Demo
-
-▶️ [Watch the demo video](docs/demo.mp4)
+⬇️ [download the demo video](docs/demo.mp4)
 
 ## Run it
 
