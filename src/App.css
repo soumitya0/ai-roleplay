@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+/* Setup screen */
+.setup {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 0 16px;
+}
+
+.setup textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Call screen */
+.call {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+.tiles {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tile {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+  aspect-ratio: 4 / 3;
+  background: #222;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid transparent;
+}
+
+.tile.speaking {
+  border-color: #22c55e;
+}
+
+.tile video,
+.tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tile video {
+  transform: scaleX(-1); /* mirror like a selfie */
+}
+
+.name {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.transcript {
+  text-align: left;
+  max-height: 200px;
+  overflow-y: auto;
+  margin: 20px 0;
+}
+
+.end {
+  background: #dc2626;
+}
